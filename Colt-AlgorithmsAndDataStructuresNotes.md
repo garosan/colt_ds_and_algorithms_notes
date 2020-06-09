@@ -213,3 +213,32 @@ How to improve?
 - Look back and refactor
 
 Based on this [book](https://en.wikipedia.org/wiki/How_to_Solve_It)
+
+## 5. Problem Solving Patterns
+
+### Intro to Problem Solving Patterns
+
+Some patterns:
+
+- Frequency Counter
+- Multiple Pointers
+- Sliding Window
+- Divide and Conquer
+- Dynamic Programming
+- Greedy Algorithms
+- Backtracking
+
+### Frequency Counter Pattern
+
+- Uses objects or sets to collect values/frequencies of values
+- Can avoid the need for nested loops or O(n<sup>2</sup>) operations
+
+**Example:** Write a function called **same**, which accepts two arrays.
+The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency of values must be the same.
+
+	same([1,2,3], [4,1,9])		// true
+	same([1,2,3], [1,9])			// false
+	same([1,2,1], [4,1,4])		// false (must be the same frequency)
+
+
+
