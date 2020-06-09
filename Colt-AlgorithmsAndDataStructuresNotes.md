@@ -93,3 +93,43 @@ In addUpSlower it is about 5n + 2 operations, but we say it's *n operations*.
 - f(n) could be quadratic (f(n) = n <sup>2</sup>)
 - f(n) could be constant (f(n) = 1)
 - f(n) could be something different
+
+### Rules of thumb for simplifying Big O Notation
+
+- Constants don't matter
+- Smaller terms don't matter
+
+### Big O Shorthands
+
+1. Arithmetic operations are constant
+2. Variable assignment is constant
+3. Accessing elements in an array (by index) or object (by key) is constant
+4. In a loop, the complexity is the length of the
+
+### Space Complexity
+
+**Auxiliary space complexity**: term used to refer to the space required by the algorithm, not including the space taken up by the inputs.
+
+Unless otherwise noted, when we talk about space complexity, we'll be talking about auxiliary space complexity.
+
+#### Space Complexity in JS
+
+Rules of Thumb:
+
+- Most primitives (booleans, numbers, `undefined, null` are constant space)
+- Strings require O(*n*) space (where *n* is the string length)
+- Reference types (arrays, objects) are generally O(*n*)
+
+### Logarithms
+
+Most common Big O complexities:
+
+- O(n<sup>2</sup>)
+- O(n log n)
+- O(n)
+- O(log n)
+- O(1)
+
+log<sub>2</sub>(8) = 3   -----> 2<sup>3</sup> = 8
+
+log<sub>2</sub>(value) = exponent   -----> 2<sup>exponent</sup> = value
