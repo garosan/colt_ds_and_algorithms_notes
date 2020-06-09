@@ -65,7 +65,6 @@ const addUpToSlower = (n) => {
 };
 
 // Faster solution
-
 const addUpToFaster = (n) => (n * (n + 1)) / 2;
 ```
 
@@ -133,3 +132,84 @@ Most common Big O complexities:
 log<sub>2</sub>(8) = 3   -----> 2<sup>3</sup> = 8
 
 log<sub>2</sub>(value) = exponent   -----> 2<sup>exponent</sup> = value
+
+For our purposes, `log<sub>2</sub> === log`.
+
+## 3. Analyzing Performance of Arrays and Objects
+
+Objectives
+- Understand how objects and arrays work, through the lens of Big O
+- **Explain why adding elements to the beginning of an array is costly**
+- Compare and contrast the runtime for arrays and objects, as well as built-in methods
+
+ ### Big O of Objects
+
+ Objects are a great choice when you don't need any ordering.
+
+Insertion - O(1)
+Removal - O(1)
+Searching - O(n)
+Access - O(1)
+
+Methods:
+
+Object.keys - O(n)
+Object.values - O(n)
+Object.entries - O(n)
+hasOwnProperty - O(1)
+
+### Big O of Arrays
+
+When to use arrays
+
+- When you need order
+- When you need fast access / insertion (kind of)
+
+Insertion - Depends<sup>1</sup>
+Removal - Depends
+Searching - O(n)
+Access - O(1)
+
+<sup>1</sup>When we insert or remove from the beginning of the array, we need to recalculate all the indices, so it's O(n).
+
+So `push()` and `pop()` are always faster than `shift()` and `unshift()`.
+
+Big O of Array Operations
+
+push - O(1)
+pop - O(1)
+shift - O(n)
+unshift - O(n)
+concat - O(n)
+slice - O(n)
+splice - O(n)
+sort - O(n log n)
+forEach / map / filter / reduce, etc.  - O(n)
+
+## 4. Problem Solving Approach
+
+Objectives
+
+- Define what an algorithm is
+- Devise a plan to solve algorithms
+- Compare and contrast problem solving patterns including frequency counters, two pointer problems and divide and conquer
+
+
+What is an algorithm? 
+
+A set of steps to accomplish a certain task.
+
+How to improve?
+
+- Devise a plan for solving problems
+- Master common problem solving patterns
+
+### Problem Solving 'Algorithm'
+
+- Understand the problem
+- Explore concrete examples
+- Break it down into smaller pieces
+- Solve or Simplify
+- Look back and refactor
+
+Based on this [book](https://en.wikipedia.org/wiki/How_to_Solve_It)
